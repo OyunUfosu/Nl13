@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NLChatbot</title>
+  </head>
+  <body>
+    <h1>NLChatbot</h1>
+    <form action="/" method="post">
+      <input type="text" name="input_text" placeholder="Enter your message" />
+      <input type="submit" value="Submit" />
+    </form>
+    {% if response %}
+      <p>{{ response }}</p>
+    {% endif %}
+  </body>
+</html>
